@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "type": "commonjs",
+<<<<<<< HEAD
   "repository": {
     "type": "git",
     "url": "git+https://github.com/goosti/TD-CSSA.git"
@@ -19,6 +20,8 @@
     "url": "https://github.com/goosti/TD-CSSA/issues"
   },
   "homepage": "https://github.com/goosti/TD-CSSA#readme",
+=======
+>>>>>>> 28e91c0b9902c56329cb310f3f3fc7d34ac27ec8
   "devDependencies": {
     "sass": "^1.97.3"
   }

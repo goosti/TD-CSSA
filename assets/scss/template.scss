@@ -1,0 +1,37 @@
+@use 'mixins' as *;
+
+.grid__col {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+$grid:(
+    12:100%,
+    6:50%,
+    4:33.33%,
+    3:25%,
+);
+    
+@each $name, $size in $grid{ 
+    .grid--#{$name}{ 
+        background-color: red;
+        border: 2px solid black;
+        grid-column: span #{$name};
+
+        @include tablet() {
+            background-color: blue;
+        }
+    }
+}
+
+$btn:(
+    l:20px,
+    m:15px,
+    s:10px,
+);
+    
+@each $name, $size in $btn{ 
+    .btn--#{$name}{ 
+        padding: $size; 
+    }
+}
