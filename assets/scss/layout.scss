@@ -1,0 +1,8 @@
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    color: map-get($colors, 'gris');
+    padding: 10px;
+}
