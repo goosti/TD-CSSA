@@ -91,59 +91,61 @@ $grid2:(
 //----------------------------------------------------
 
 
-.butons{
+.btn{
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    color: whitesmoke;
 
-    .btn{
-        padding: 15px;
-        border-radius: 15px;
-        border: none;
-        color: whitesmoke;
-
-        &--primary{
-            background-color: map-get($colors, 'bleu');
-        }
-
-        &--secondary{
-            background-color: map-get($colors, 'gris');
-        }
-
-        &--success{
-            background-color: map-get($colors, 'vert');
-        }
-
-        &--danger{
-            background-color: map-get($colors, 'vert');
-        }
-
-        &--warning{
-            background-color: map-get($colors, 'jaune');
-            color: black;
-        }
-
-        &--info{
-            background-color: map-get($colors, 'info');
-        }
-
-        &--outline-primary{
-            background-color: white;
-            border: 1px solid map-get($colors, 'bleu');
-            color: map-get($colors, 'bleu');
-        }
-
-        &--outline-secondary{
-            background-color: white;
-            border: 1px solid map-get($colors, 'gris');
-            color: map-get($colors, 'gris');
-        }
-
-        &--pleine-largeur{
-            width: 100%;
-        }
-
-        &--arrondi{
-            border-radius: 50px;
-        }
+    &--primary{
+        background-color: map-get($colors, 'bleu');
     }
+
+    &--secondary{
+        background-color: map-get($colors, 'gris');
+    }
+
+    &--success{
+        background-color: map-get($colors, 'vert');
+    }
+
+    &--danger{
+        background-color: map-get($colors, 'vert');
+    }
+
+    &--warning{
+        background-color: map-get($colors, 'jaune');
+        color: black;
+    }
+
+    &--info{
+        background-color: map-get($colors, 'info');
+    }
+
+    &--outline-primary{
+        background-color: white;
+        border: 1px solid map-get($colors, 'bleu');
+        color: map-get($colors, 'bleu');
+    }
+
+    &--outline-secondary{
+        background-color: white;
+        border: 1px solid map-get($colors, 'gris');
+        color: map-get($colors, 'gris');
+    }
+
+    &--pleine-largeur{
+        width: 100%;
+    }
+
+    &--arrondi{
+        border-radius: 50px;
+    }
+}
+
+.btn:hover{
+    opacity: 0.7;
+    cursor: pointer;
 }
 
 $btn:(

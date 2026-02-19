@@ -81,46 +81,51 @@ section {
   }
 }
 
-.butons .btn {
+.btn {
   padding: 15px;
   border-radius: 15px;
   border: none;
   color: whitesmoke;
 }
-.butons .btn--primary {
+.btn--primary {
   background-color: #017bff;
 }
-.butons .btn--secondary {
+.btn--secondary {
   background-color: #6c747d;
 }
-.butons .btn--success {
+.btn--success {
   background-color: #27a840;
 }
-.butons .btn--danger {
+.btn--danger {
   background-color: #27a840;
 }
-.butons .btn--warning {
+.btn--warning {
   background-color: #fac500;
   color: black;
 }
-.butons .btn--info {
+.btn--info {
   background-color: #1c9eba;
 }
-.butons .btn--outline-primary {
+.btn--outline-primary {
   background-color: white;
   border: 1px solid #017bff;
   color: #017bff;
 }
-.butons .btn--outline-secondary {
+.btn--outline-secondary {
   background-color: white;
   border: 1px solid #6c747d;
   color: #6c747d;
 }
-.butons .btn--pleine-largeur {
+.btn--pleine-largeur {
   width: 100%;
 }
-.butons .btn--arrondi {
+.btn--arrondi {
   border-radius: 50px;
+}
+
+.btn:hover {
+  opacity: 0.7;
+  cursor: pointer;
 }
 
 .btn--grand {
