@@ -1,0 +1,43 @@
+.card{
+    &__playground{
+        max-width: 600px;
+        width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 1rem;
+
+        &__contenu{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        }
+        &__image{
+            width: 100%;
+            height: auto;
+            border-radius: 0.5rem;
+
+        }
+
+        &__titre-card{
+            font-size: 1.5rem;
+            font-weight: bold;
+
+        }
+
+        &__description{
+            font-size: 1rem;
+            color: #555;
+            text-align: center;
+        }
+        
+        &__background-gris{
+            background-color: #f0f0f0;
+            padding: 1rem;
+            border-radius: 0.5rem;
+        }
+
+    }
+}

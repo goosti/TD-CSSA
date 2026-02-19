@@ -117,4 +117,38 @@ h3 {
   color: blue;
 }
 
+.card__playground {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+.card__playground__contenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card__playground__image {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+.card__playground__titre-card {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.card__playground__description {
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+}
+.card__playground__background-gris {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
 /*# sourceMappingURL=style.css.map */
