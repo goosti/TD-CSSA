@@ -1,7 +1,11 @@
 @use 'mixins' as *;
+@use 'variables' as *;
 
 
+//----------------------------------------------------
 // GENERAL
+//----------------------------------------------------
+
 
 h2{
     color: darkorchid;
@@ -16,8 +20,15 @@ h3{
     padding: 10px;
 }
 
+section{
+    margin: 0 5%;
+}
 
+
+//----------------------------------------------------
 // GRID
+//----------------------------------------------------
+
 
 .grid{
     &__col{
@@ -72,23 +83,13 @@ $grid2:(
         }
     }
 }
+}
 
 
+//----------------------------------------------------
 // BOUTONS
+//----------------------------------------------------
 
-
-$btn:(
-    l:20px,
-    m:15px,
-    s:10px,
-);
-    
-@each $name, $size in $btn{ 
-    .btn--#{$name}{ 
-        padding: $size; 
-    }
-}
-}
 
 .butons{
 
@@ -99,34 +100,60 @@ $btn:(
         color: whitesmoke;
 
         &--primary{
-            background-color: #017bff;
+            background-color: map-get($colors, 'bleu');
         }
 
         &--secondary{
-            background-color: #6c747d;
+            background-color: map-get($colors, 'gris');
         }
 
         &--success{
-            background-color: #27a840;
+            background-color: map-get($colors, 'vert');
         }
 
         &--danger{
-            background-color: #dc3849;
+            background-color: map-get($colors, 'vert');
         }
 
         &--warning{
-            background-color: #fac500;
+            background-color: map-get($colors, 'jaune');
             color: black;
         }
 
         &--info{
-            background-color: #1c9eba;
+            background-color: map-get($colors, 'info');
         }
 
         &--outline-primary{
             background-color: white;
-            border: 1px solid blue;
-            color: blue;
+            border: 1px solid map-get($colors, 'bleu');
+            color: map-get($colors, 'bleu');
         }
+
+        &--outline-secondary{
+            background-color: white;
+            border: 1px solid map-get($colors, 'gris');
+            color: map-get($colors, 'gris');
+        }
+
+        &--pleine-largeur{
+            width: 100%;
+        }
+
+        &--arrondi{
+            border-radius: 50px;
+        }
+    }
+}
+
+$btn:(
+    grand:20px,
+    moyen:15px,
+    petit:10px,
+);
+    
+@each $name, $size in $btn{ 
+    .btn--#{$name}{ 
+        padding: $size!important; 
     }
 }
