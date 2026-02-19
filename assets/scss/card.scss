@@ -1,4 +1,10 @@
 .card{
+    &__galerie{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
     &__playground{
         max-width: 600px;
         width: 100%;
@@ -35,11 +41,18 @@
         }
         
         &__background-gris{
+            display: flex;
             background-color: #f0f0f0;
             width: 100%;
             margin: 0  auto;
             padding: 1rem;
             border-radius: 0.5rem;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__butons{
+            padding-bottom: 15px;
         }
     }
 }

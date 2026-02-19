@@ -140,6 +140,11 @@ section {
   padding: 10px !important;
 }
 
+.card__galerie {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
 .card__playground {
   max-width: 600px;
   width: 100%;
@@ -170,11 +175,17 @@ section {
   text-align: center;
 }
 .card__playground__background-gris {
+  display: flex;
   background-color: #f0f0f0;
   width: 100%;
   margin: 0 auto;
   padding: 1rem;
   border-radius: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.card__playground__butons {
+  padding-bottom: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
