@@ -1,9 +1,41 @@
 @use 'mixins' as *;
 
-.grid__col {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+
+// GENERAL
+
+h2{
+    color: darkorchid;
+    text-decoration: underline;
+    margin: 15px;
+    padding: 15px;
 }
+
+h3{
+    color: darkblue;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+// GRID
+
+.grid{
+    &__col{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    &__responsive-container{
+        display: flex;
+        grid-template-columns: repeat(6, 1fr);
+        flex-wrap: wrap;
+
+        @include phone() {
+            grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
 
 $grid:(
     12:100%,
@@ -17,12 +49,33 @@ $grid:(
         background-color: red;
         border: 2px solid black;
         grid-column: span #{$name};
+    }
+}
 
-        @include tablet() {
+$grid2:(
+    6:50%,
+    3:33.33%,
+);
+    
+@each $name, $size in $grid2{ 
+    @include tablet() {
+        .grid--md-#{$name}{ 
             background-color: blue;
+            grid-column: span #{$name};
+        }
+    }
+
+    @include phone() {
+        .grid--lg-#{$name}{ 
+            background-color: green;
+            grid-column: span #{$name};
         }
     }
 }
+
+
+// BOUTONS
+
 
 $btn:(
     l:20px,
@@ -34,4 +87,11 @@ $btn:(
     .btn--#{$name}{ 
         padding: $size; 
     }
+}
+}
+
+.btn{
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
 }
