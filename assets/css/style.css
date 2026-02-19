@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Lato";
 }
 
 h2 {
@@ -89,6 +90,26 @@ h3 {
   padding: 15px;
   border-radius: 15px;
   border: none;
+  color: whitesmoke;
+}
+.btn--primary {
+  background-color: #017bff;
+}
+.btn--secondary {
+  background-color: #6c747d;
+}
+.btn--success {
+  background-color: #27a840;
+}
+.btn--danger {
+  background-color: #dc3849;
+}
+.btn--warning {
+  background-color: #fac500;
+  color: black;
+}
+.btn--info {
+  background-color: #1c9eba;
 }
 
 /*# sourceMappingURL=style.css.map */

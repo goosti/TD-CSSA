@@ -94,6 +94,30 @@ $btn:(
     padding: 15px;
     border-radius: 15px;
     border: none;
+    color: whitesmoke;
 
-    
+    &--primary{
+        background-color: #017bff;
+    }
+
+    &--secondary{
+        background-color: #6c747d;
+    }
+
+    &--success{
+        background-color: #27a840;
+    }
+
+    &--danger{
+        background-color: #dc3849;
+    }
+
+    &--warning{
+        background-color: #fac500;
+        color: black;
+    }
+
+    &--info{
+        background-color: #1c9eba;
+    }
 }
