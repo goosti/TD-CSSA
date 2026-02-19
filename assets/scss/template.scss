@@ -60,6 +60,7 @@ $grid:(
         background-color: red;
         border: 2px solid black;
         grid-column: span #{$name};
+        border-radius: 15px;
     }
 }
 
@@ -69,6 +70,10 @@ $grid2:(
 );
     
 @each $name, $size in $grid2{ 
+    .grid--md-#{$name}{ 
+        margin-right: 25px;
+    }
+
     @include tablet() {
         .grid--md-#{$name}{ 
             background-color: blue;
@@ -110,7 +115,7 @@ $grid2:(
     }
 
     &--danger{
-        background-color: map-get($colors, 'vert');
+        background-color: map-get($colors, 'rouge');
     }
 
     &--warning{

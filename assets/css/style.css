@@ -1,18 +1,224 @@
-/* Error: Undefined variable.
- *   ,
- * 6 |     color: map-get($colors, 'gris');
- *   |                    ^^^^^^^
- *   '
- *   assets\scss\layout.scss 6:20  @use
- *   assets\scss\main.scss 4:1     root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 6 \2502      color: map-get($colors, 'gris');\d\a   \2502                     ^^^^^^^\a   \2575 \a   assets\\scss\\layout.scss 6:20  @use\a   assets\\scss\\main.scss 4:1     root stylesheet";
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato";
 }
+
+h2 {
+  color: darkorchid;
+  text-decoration: underline;
+  margin: 15px;
+  padding: 15px;
+}
+
+h3 {
+  color: darkblue;
+  margin: 10px;
+  padding: 10px;
+}
+
+section {
+  margin: 0 5%;
+}
+
+.grid__col {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.grid__responsive-container {
+  display: flex;
+  grid-template-columns: repeat(6, 1fr);
+  flex-wrap: wrap;
+}
+@media (max-width: 767px) {
+  .grid__responsive-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.grid .grid--12 {
+  background-color: red;
+  border: 2px solid black;
+  grid-column: span 12;
+  border-radius: 15px;
+}
+.grid .grid--6 {
+  background-color: red;
+  border: 2px solid black;
+  grid-column: span 6;
+  border-radius: 15px;
+}
+.grid .grid--4 {
+  background-color: red;
+  border: 2px solid black;
+  grid-column: span 4;
+  border-radius: 15px;
+}
+.grid .grid--3 {
+  background-color: red;
+  border: 2px solid black;
+  grid-column: span 3;
+  border-radius: 15px;
+}
+.grid .grid--md-6 {
+  margin-right: 25px;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .grid .grid--md-6 {
+    background-color: blue;
+    grid-column: span 6;
+  }
+}
+@media (max-width: 767px) {
+  .grid .grid--lg-6 {
+    background-color: green;
+    grid-column: span 6;
+  }
+}
+.grid .grid--md-3 {
+  margin-right: 25px;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .grid .grid--md-3 {
+    background-color: blue;
+    grid-column: span 3;
+  }
+}
+@media (max-width: 767px) {
+  .grid .grid--lg-3 {
+    background-color: green;
+    grid-column: span 3;
+  }
+}
+
+.btn {
+  padding: 15px;
+  border-radius: 15px;
+  border: none;
+  color: whitesmoke;
+}
+.btn--primary {
+  background-color: #017bff;
+}
+.btn--secondary {
+  background-color: #6c747d;
+}
+.btn--success {
+  background-color: #27a840;
+}
+.btn--danger {
+  background-color: #dc3849;
+}
+.btn--warning {
+  background-color: #fac500;
+  color: black;
+}
+.btn--info {
+  background-color: #1c9eba;
+}
+.btn--outline-primary {
+  background-color: white;
+  border: 1px solid #017bff;
+  color: #017bff;
+}
+.btn--outline-secondary {
+  background-color: white;
+  border: 1px solid #6c747d;
+  color: #6c747d;
+}
+.btn--pleine-largeur {
+  width: 100%;
+}
+.btn--arrondi {
+  border-radius: 50px;
+}
+
+.btn:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.btn--grand {
+  padding: 20px !important;
+}
+
+.btn--moyen {
+  padding: 15px !important;
+}
+
+.btn--petit {
+  padding: 10px !important;
+}
+
+.card__galerie {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.card__playground {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+.card__playground__contenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+.card__playground__image {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+.card__playground__titre-card {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.card__playground__description {
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+}
+.card__playground__background-gris {
+  display: flex;
+  background-color: #f0f0f0;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.card__playground__butons {
+  padding-bottom: 15px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  background-color: #6c747d;
+  color: whitesmoke;
+  padding: 10px;
+}
+.header .btn {
+  background-color: white;
+  color: #6c747d;
+}
+
+.footer {
+  text-align: center;
+  background-color: #6c747d;
+  padding: 10px;
+}
+.footer h3 {
+  color: whitesmoke;
+}
+
+/*# sourceMappingURL=style.css.map */
