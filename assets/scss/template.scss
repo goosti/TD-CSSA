@@ -90,34 +90,43 @@ $btn:(
 }
 }
 
-.btn{
-    padding: 15px;
-    border-radius: 15px;
-    border: none;
-    color: whitesmoke;
+.butons{
 
-    &--primary{
-        background-color: #017bff;
-    }
+    .btn{
+        padding: 15px;
+        border-radius: 15px;
+        border: none;
+        color: whitesmoke;
 
-    &--secondary{
-        background-color: #6c747d;
-    }
+        &--primary{
+            background-color: #017bff;
+        }
 
-    &--success{
-        background-color: #27a840;
-    }
+        &--secondary{
+            background-color: #6c747d;
+        }
 
-    &--danger{
-        background-color: #dc3849;
-    }
+        &--success{
+            background-color: #27a840;
+        }
 
-    &--warning{
-        background-color: #fac500;
-        color: black;
-    }
+        &--danger{
+            background-color: #dc3849;
+        }
 
-    &--info{
-        background-color: #1c9eba;
+        &--warning{
+            background-color: #fac500;
+            color: black;
+        }
+
+        &--info{
+            background-color: #1c9eba;
+        }
+
+        &--outline-primary{
+            background-color: white;
+            border: 1px solid blue;
+            color: blue;
+        }
     }
 }

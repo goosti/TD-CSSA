@@ -86,30 +86,35 @@ h3 {
   padding: 10px;
 }
 
-.btn {
+.butons .btn {
   padding: 15px;
   border-radius: 15px;
   border: none;
   color: whitesmoke;
 }
-.btn--primary {
+.butons .btn--primary {
   background-color: #017bff;
 }
-.btn--secondary {
+.butons .btn--secondary {
   background-color: #6c747d;
 }
-.btn--success {
+.butons .btn--success {
   background-color: #27a840;
 }
-.btn--danger {
+.butons .btn--danger {
   background-color: #dc3849;
 }
-.btn--warning {
+.butons .btn--warning {
   background-color: #fac500;
   color: black;
 }
-.btn--info {
+.butons .btn--info {
   background-color: #1c9eba;
+}
+.butons .btn--outline-primary {
+  background-color: white;
+  border: 1px solid blue;
+  color: blue;
 }
 
 /*# sourceMappingURL=style.css.map */
