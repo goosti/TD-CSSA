@@ -115,7 +115,7 @@ $grid2:(
     }
 
     &--danger{
-        background-color: map-get($colors, 'vert');
+        background-color: map-get($colors, 'rouge');
     }
 
     &--warning{
