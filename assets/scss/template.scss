@@ -1,4 +1,6 @@
-.grid {
+@use 'mixins' as *;
+
+.grid__col {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
 }
@@ -15,6 +17,10 @@ $grid:(
         background-color: red;
         border: 2px solid black;
         grid-column: span #{$name};
+
+        @include tablet() {
+            background-color: blue;
+        }
     }
 }
 
