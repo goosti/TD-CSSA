@@ -1,3 +1,8 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
 $grid:(
     12:100%,
     6:50%,
@@ -7,10 +12,11 @@ $grid:(
     
 @each $name, $size in $grid{ 
     .grid--#{$name}{ 
-        max-width: $size; 
+        background-color: red;
+        border: 2px solid black;
+        grid-column: span #{$name};
     }
 }
-
 
 $btn:(
     l:20px,

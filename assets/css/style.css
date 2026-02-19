@@ -1,0 +1,42 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.grid--12 {
+  background-color: red;
+  border: 2px solid black;
+  grid-column: span 12;
+}
+
+.grid--6 {
+  background-color: red;
+  border: 2px solid black;
+  grid-column: span 6;
+}
+
+.grid--4 {
+  background-color: red;
+  border: 2px solid black;
+  grid-column: span 4;
+}
+
+.grid--3 {
+  background-color: red;
+  border: 2px solid black;
+  grid-column: span 3;
+}
+
+.btn--l {
+  padding: 20px;
+}
+
+.btn--m {
+  padding: 15px;
+}
+
+.btn--s {
+  padding: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
