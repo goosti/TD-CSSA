@@ -1,0 +1,25 @@
+$grid:(
+    12:100%,
+    6:50%,
+    4:33.33%,
+    3:25%,
+);
+    
+@each $name, $size in $grid{ 
+    .grid--#{$name}{ 
+        max-width: $size; 
+    }
+}
+
+
+$btn:(
+    l:20px,
+    m:15px,
+    s:10px,
+);
+    
+@each $name, $size in $btn{ 
+    .btn--#{$name}{ 
+        padding: $size; 
+    }
+}
